@@ -9,8 +9,8 @@ Repositorio del grupo **Below the Surface** para la asignatura **Lenguajes y Com
 | Nombre | Rol |
 |---|---|
 | Miguel Mora | Líder |
-| Josué Azócar | Integrante |
-| Josmer Azócar | Integrante |
+| Josue Azocar | Integrante |
+| Josmer Azocar | Integrante |
 | Samuel Prado | Integrante |
 
 ## Estructura
