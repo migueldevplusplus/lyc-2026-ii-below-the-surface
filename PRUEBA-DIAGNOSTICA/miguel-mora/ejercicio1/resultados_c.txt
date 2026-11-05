@@ -1,0 +1,26 @@
+=== Ejercicio 1 - Validador de caballo (C) ===
+
+Ak=a1 n=4 C=Kc2 Kd4 Kb3 Kc5
+  salida: movimiento CORRECTO
+Ak=a1 n=4 C=Kc2 Kd4 Kb4 Kc5
+  salida: INCORRECTO falla en el movimiento 3
+Ak=a2 n=5 C=Kc3 Ke4 Kf6 Ke8 Kg7
+  salida: movimiento CORRECTO
+Ak=a2 n=5 C=Kc8 Ke4 Kf6 Ke8 Kg7
+  salida: INCORRECTO falla en el movimiento 1
+Ak=a8 n=2 C=Kb6 Kd7
+  salida: movimiento CORRECTO
+Ak=a8 n=2 C=Kb6 Kb7
+  salida: INCORRECTO falla en el movimiento 2
+Ak=a1 n=10 C=Kc2 Kd4 Kf3 Ke5 Kg6 Kh8 Kf7 Kd8 Kc6 Kb4
+  salida: movimiento CORRECTO
+Ak=a1 n=10 C=Kc2 Kd4 Kf3 Ke5 Kg6 Kh8 Kf7 Kd8 Kc6 Qb4
+  salida: movimiento INCORRECTO falla letra Q no pertenece a un caballo (movimiento 10)
+Ak=a1 n=10 C=Kc2 Kd4 Kf3 Ke5 Kg6 Kh8 Kf7 Kd8 Kh6 Kb4
+  salida: INCORRECTO falla en el movimiento 9
+
+Posicion inicial asumida para la secuencia: a2
+n = 100 movimientos: movimiento CORRECTO
+  tiempo: 0.88 microsegundos
+Secuencia del enunciado (224 movimientos) x 10: movimiento CORRECTO
+  tiempo total: 13.30 microsegundos

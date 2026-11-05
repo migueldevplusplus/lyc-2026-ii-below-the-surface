@@ -1,0 +1,86 @@
+=== Ejercicio 3 - Traductor de palabras reservadas (C) ===
+Archivo: ejemplo.c (1181 caracteres cargados en memoria)
+
+Palabras reservadas encontradas:
+  break      -> romper         (2 veces)
+  case       -> caso           (2 veces)
+  char       -> caracter       (1 veces)
+  const      -> constante      (1 veces)
+  continue   -> continuar      (1 veces)
+  default    -> por_defecto    (1 veces)
+  do         -> hacer          (1 veces)
+  double     -> doble          (1 veces)
+  else       -> sino           (1 veces)
+  enum       -> enumeracion    (1 veces)
+  float      -> flotante       (1 veces)
+  for        -> para           (1 veces)
+  if         -> si             (2 veces)
+  int        -> entero         (8 veces)
+  long       -> largo          (1 veces)
+  return     -> retornar       (3 veces)
+  sizeof     -> tamano_de      (1 veces)
+  static     -> estatico       (1 veces)
+  struct     -> estructura     (1 veces)
+  switch     -> segun          (1 veces)
+  typedef    -> definir_tipo   (1 veces)
+  unsigned   -> sin_signo      (2 veces)
+  void       -> vacio          (2 veces)
+  while      -> mientras       (1 veces)
+Total: 38 apariciones de 24 palabras distintas
+
+Tiempo de traducir el archivo 100 veces (n=100): 1475.79 microsegundos
+
+--- Codigo traducido ---
+#include <stdio.h>
+#include <stdlib.h>
+
+/* Programa de ejemplo: el while y el int de este comentario NO se traducen */
+definir_tipo estructura {
+    caracter nombre[50];
+    entero edad;
+    doble promedio;
+} Estudiante;
+
+enumeracion Estado { ACTIVO, INACTIVO };
+
+estatico entero contador_global = 0;
+
+sin_signo largo factorial(sin_signo entero numero) {
+    si (numero <= 1) retornar 1;
+    retornar numero * factorial(numero - 1);
+}
+
+vacio clasificar(entero nota) {
+    segun (nota / 5) {
+        caso 4:
+            printf("Excelente\n");
+            romper;
+        caso 3:
+            printf("Aprobado\n");
+            romper;
+        por_defecto:
+            printf("Reprobado: no use int ni while aqui\n");
+    }
+}
+
+entero main(vacio) {
+    constante entero limite = 5;
+    flotante suma = 0.0f;
+    Estudiante *lista = malloc(tamano_de(Estudiante) * limite);
+
+    para (entero i = 0; i < limite; i++) {
+        si (i % 2 == 0) continuar;
+        sino suma += i;
+    }
+
+    entero intentos = 3; // el identificador "intentos" contiene "int" pero no es palabra reservada
+    hacer {
+        intentos--;
+    } mientras (intentos > 0);
+
+    clasificar(18);
+    printf("%lu %f %d\n", factorial(5), suma, contador_global);
+    free(lista);
+    retornar 0;
+}
+
