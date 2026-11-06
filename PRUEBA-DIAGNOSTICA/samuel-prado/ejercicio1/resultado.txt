@@ -1,3 +1,0 @@
-Lenguaje: Python
-Tiempo n=100 (10 repeticiones): 0.006188100 s
-Tiempo promedio: 0.000618810 s
