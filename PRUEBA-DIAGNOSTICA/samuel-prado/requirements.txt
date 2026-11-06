@@ -1,0 +1,3 @@
+# Python 3.8+ es requerido.
+# Este proyecto utiliza exclusivamente la librería estándar (sys, time, os).
+# No se requieren dependencias externas (pip install).

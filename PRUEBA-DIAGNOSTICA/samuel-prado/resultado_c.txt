@@ -1,0 +1,4 @@
+Lenguaje: C
+n = 100, repeticiones = 10
+Tiempo total: 0.000152200 s
+Tiempo promedio: 0.000015220 s
