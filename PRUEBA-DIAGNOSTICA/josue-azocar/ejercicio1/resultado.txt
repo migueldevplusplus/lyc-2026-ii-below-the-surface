@@ -1,2 +1,8 @@
-Ak=a1 n=4 C=Kc2 Kd4 Kb3 Kc5
-movimiento CORRECTO.
+
+Movimientos cargados: 500
+Posición inicial: a2
+Repeticiones: 10
+
+Resultado de la secuencia: movimiento CORRECTO.
+Tiempo total (10 verificaciones): 0.015071 segundos
+Tiempo promedio por verificación: 0.001507 segundos
