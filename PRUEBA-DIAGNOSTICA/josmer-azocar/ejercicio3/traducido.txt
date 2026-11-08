@@ -1,0 +1,61 @@
+=== Palabras reservadas encontradas ===
+  break      -> romper         (1 veces)
+  case       -> caso           (1 veces)
+  char       -> caracter       (1 veces)
+  default    -> por_defecto    (1 veces)
+  double     -> doble          (1 veces)
+  else       -> sino           (1 veces)
+  for        -> para           (1 veces)
+  if         -> si             (1 veces)
+  int        -> entero         (8 veces)
+  return     -> retornar       (2 veces)
+  struct     -> estructura     (2 veces)
+  switch     -> segun          (1 veces)
+  unsigned   -> sin_signo      (1 veces)
+  void       -> vacio          (1 veces)
+  while      -> mientras       (1 veces)
+
+=== Codigo traducido ===
+#include <stdio.h>
+
+estructura punto {
+    entero x;
+    entero y;
+};
+
+/* Esta funcion suma los numeros del 1 al limite */
+entero sumar_hasta(entero limite) {
+    entero suma = 0;
+    para (entero i = 1; i <= limite; i++) {
+        suma += i;
+    }
+    retornar suma;
+}
+
+entero main(vacio) {
+    estructura punto p = {3, 4};
+    doble promedio = 2.5;
+    caracter letra = 'a';
+    sin_signo entero contador = 0;
+
+    mientras (contador < 3) {
+        contador++;
+    }
+
+    si (p.x > p.y) {
+        printf("x es mayor\n");
+    } sino {
+        printf("y es mayor, el texto int no se traduce\n");
+    }
+
+    segun (letra) {
+        caso 'a':
+            printf("letra a\n");
+            romper;
+        por_defecto:
+            printf("otra letra\n");
+    }
+
+    printf("suma = %d, promedio = %f\n", sumar_hasta(5), promedio);
+    retornar 0;
+}

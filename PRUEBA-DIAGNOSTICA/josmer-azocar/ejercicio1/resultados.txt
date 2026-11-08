@@ -1,0 +1,15 @@
+Posicion inicial: a2
+Cantidad de movimientos: 500
+
+Iteracion 1: movimiento CORRECTO - 1.8723 ms
+Iteracion 2: movimiento CORRECTO - 1.7935 ms
+Iteracion 3: movimiento CORRECTO - 1.771 ms
+Iteracion 4: movimiento CORRECTO - 1.7097 ms
+Iteracion 5: movimiento CORRECTO - 1.7494 ms
+Iteracion 6: movimiento CORRECTO - 1.7518 ms
+Iteracion 7: movimiento CORRECTO - 1.5168 ms
+Iteracion 8: movimiento CORRECTO - 1.0986 ms
+Iteracion 9: movimiento CORRECTO - 1.0128 ms
+Iteracion 10: movimiento CORRECTO - 0.9901 ms
+
+Tiempo total de las 10 verificaciones: 15.2661 ms
